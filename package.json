@@ -1,0 +1,38 @@
+{
+  "name": "03-premier-composant",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm-run-all -p dev:*",
+    "dev:client": "vite",
+    "dev:api": "json-server -p 3001 db.json",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/",
+    "test": "vitest --ui"
+  },
+  "dependencies": {
+    "pinia": "^2.1.7",
+    "vee-validate": "^4.12.8",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.2",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.8.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitest/ui": "^1.6.0",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/test-utils": "^2.4.6",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "jsdom": "^24.0.0",
+    "json-server": "^1.0.0-beta.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.2.5",
+    "vite": "^5.2.8",
+    "vitest": "^1.6.0"
+  }
+}
